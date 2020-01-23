@@ -19,8 +19,9 @@
     "gatsby-plugin-mdx": "^1.0.52",
     "gatsby-plugin-netlify-cms": "^4.0.0",
     "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.0.35",
+    "gatsby-plugin-sharp": "^2.3.13",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-typography": "^2.2.13",
     "gatsby-remark-copy-linked-files": "^2.0.11",
@@ -31,11 +32,14 @@
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.18",
     "netlify-cms-app": "^2.9.1",
+    "node-gyp": "^6.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
+    "rebuild": "^0.1.2",
+    "sharp": "^0.24.0",
     "styled-components": "^4.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
@@ -43,6 +47,12 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.7",
+    "@storybook/addon-links": "^5.3.7",
+    "@storybook/addons": "^5.3.7",
+    "@storybook/react": "^5.3.7",
+    "babel-loader": "^8.0.6",
     "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -61,6 +71,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }
